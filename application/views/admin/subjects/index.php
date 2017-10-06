@@ -1,6 +1,11 @@
 <h2 class="page-header">Subjects</h2>
+<!-- Success Message Output -->
 <?php if($this->session->flashdata('success')) : ?>
     <?php echo '<div class="alert alert-success">'.$this->session->flashdata('success').'</div>'; ?>
+<?php endif; ?>
+<!-- Error Message Output -->
+<?php if($this->session->flashdata('error')) : ?>
+    <?php echo '<div class="alert alert-danger">'.$this->session->flashdata('error').'</div>'; ?>
 <?php endif; ?>
 
 <?php if($subjects) : ?>
